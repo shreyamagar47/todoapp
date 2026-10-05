@@ -7,60 +7,96 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <h1>Shreya Magar</h1>
         <p> Personal Portfolio</p>
     </header>
 
-    <nav>
-        <ul>
+    <nav class="navbar">
+        <ul class="nav-links">
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
+
     <main>
-        <section id="about">
-            <h2> About Me</h2>
+        <section id="about" class="section about">
+        <div>
+             <h2> About Me</h2>
+        </div>
 
+        <div class="about-content">
+
+            <div class="about-image">
             <img src="image/profile.jpeg" alt="Profile photo of Shreya Magar">
+            </div>
 
+            <div class="about-text">
             <p>
              I am a student interested in technology, web development, and creative projects.
             I enjoy learning new skills and improving my knowledge through practical work.
             My goal is to develop strong technical and communication skills for my future career.
             </p>
+
+            </div>
+
+        </div>
         </section>
 
-        <section id="skills">
-            <h2>Technical Skills</h2>
+        <section id="skills" class="section skills">
 
-            <dl>
-                <dt>HTML</dt>
-                <dd>Creating structured webpages using semantic HTML5.</dd>
+    <h2>Technical Skills</h2>
 
-        <dt>C Programming</dt>
-        <dd>Writing basic programs using functions, arrays, pointers, and structures.</dd>
+    <div class="skills-grid">
 
-        <dt>SQL</dt>
-        <dd>Creating databases, tables, and basic SQL queries.</dd>
+        <dl class="skill-card">
+            <dt>HTML</dt>
+            <dd>
+                Creating structured webpages using semantic HTML5.
+            </dd>
+        </dl>
 
-        <dt>Computer Networking</dt>
-        <dd>Understanding basic networking, routing, switching, and network configuration.</dd>
-    </dl>
+        <dl class="skill-card">
+            <dt>C Programming</dt>
+            <dd>
+                Writing basic programs using functions, arrays,
+                pointers, and structures.
+            </dd>
+        </dl>
 
-    <section id="projects">
+        <dl class="skill-card">
+            <dt>SQL</dt>
+            <dd>
+                Creating databases, tables, and basic SQL queries.
+            </dd>
+        </dl>
+
+        <dl class="skill-card">
+            <dt>Computer Networking</dt>
+            <dd>
+                Understanding basic networking, routing, switching,
+                and network configuration.
+            </dd>
+        </dl>
+
+    </div>
+
+</section>
+
+    <section id="projects" class="section projects">
     <h2>Projects</h2>
 
-    <article>
-        <h3>C Library Management System</h3>
+        <div class="projects-grid">
 
+        <article class="project-card">
+   
+        <h3>C Library Management System</h3>
         <p>
             A basic library management system developed using C programming.
             The project manages books, users, and borrowing records.
         </p>
-
         <p>
             <a href="https://github.com/yourusername/library-management-system">
                 View Repository
@@ -68,14 +104,12 @@
         </p>
     </article>
 
-    <article>
+    <article class="project-card">
         <h3>Personal Portfolio Website</h3>
-
         <p>
             A single-page personal portfolio created using semantic HTML5.
             The website contains information about my skills, projects, and contact details.
         </p>
-
         <p>
             <a href="https://github.com/yourusername/personal-portfolio">
                 View Repository
@@ -84,7 +118,7 @@
     </article>
 </section>
 
-<section id="contact">
+<section id="contact" class="section contact">
     <h2>Contact Me</h2>
 
     <form>
@@ -108,14 +142,10 @@
         </p>
             </form>
             </section>
- 
-    <footer>
+
+    </main>
+        <footer>
     <p>&copy; 2026 Shreya Magar. All rights reserved.</p>
 </footer>
-
-</section>
-            </dl>
-        </section>
-    </main>
 </body>
 </html>
